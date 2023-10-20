@@ -34,8 +34,13 @@ $ ./bin/github-top --help
 ## Usage
 
 ```
+A command line tool to interact with GitHub organizations
+
 Usage:
   github-top [command]
+
+Examples:
+github-top stars --org-name netflix
 
 Available Commands:
   completion    Generate the autocompletion script for the specified shell
