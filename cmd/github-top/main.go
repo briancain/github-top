@@ -54,7 +54,7 @@ func main() {
 			}
 			s.Stop()
 
-			format.FormatStarsTable(sortedRepos, totalResults)
+			format.FormatStarsTable(sortedRepos, totalResults, githubOrgName)
 		},
 	}
 	rootCmd.AddCommand(cmdTopStars)
@@ -78,7 +78,7 @@ func main() {
 			}
 			s.Stop()
 
-			format.FormatForksTable(sortedRepos, totalResults)
+			format.FormatForksTable(sortedRepos, totalResults, githubOrgName)
 		},
 	}
 	rootCmd.AddCommand(cmdTopForks)
@@ -104,7 +104,7 @@ func main() {
 			}
 			s.Stop()
 
-			format.FormatPRsTable(repoPRs, totalResults)
+			format.FormatPRsTable(repoPRs, totalResults, githubOrgName)
 		},
 	}
 	rootCmd.AddCommand(cmdTopPRs)
@@ -130,7 +130,7 @@ func main() {
 			}
 			s.Stop()
 
-			format.FormatContributionsTable(repoContribs, totalResults)
+			format.FormatContributionsTable(repoContribs, totalResults, githubOrgName)
 		},
 	}
 	rootCmd.AddCommand(cmdTopContribs)
