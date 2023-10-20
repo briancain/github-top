@@ -19,7 +19,7 @@ import (
 // project I would abstract out the commands into their own functions to be
 // generated there.
 func main() {
-	var rootCmd = &cobra.Command{Use: "gh-top"}
+	var rootCmd = &cobra.Command{Use: "github-top"}
 
 	var (
 		// GitHub configuration
