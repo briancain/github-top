@@ -79,10 +79,9 @@ Some good Organizations to test:
 $ ./bin/github-top --token <TOKEN_HERE> stars -o netflix
 ```
 
-## Note for reviewer
+## Note for the user
 
-The exercise suggested using GitHub's REST API version 3. This CLI tool uses
-that API via [go-github](https://github.com/google/go-github). For large queries
+This CLI tool uses that API via [go-github](https://github.com/google/go-github). For large queries
 with organizations with many repositories, this command line tool will iterate
 through each paginated list of repos (100 per-page) to collect all repos for an org.
 
